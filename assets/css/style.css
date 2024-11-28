@@ -71,6 +71,22 @@ nav a:hover {
   padding: 10px;
 }
 
+.our-product-btn{
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 1px solid #333;
+  background: none;
+  cursor: pointer;
+  border-radius: 50px;
+  text-transform: uppercase;
+}
+
+.title{
+  font-size: 2rem;
+  margin-top: 10px;
+  text-align: center;
+}
+
 .product-card {
   border-radius: 8px;
   overflow: hidden; /* Prevents text or elements from overflowing */
@@ -90,9 +106,11 @@ nav a:hover {
 
 /* Product information container */
 .product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the button and other text horizontally */
   padding: 10px;
   text-align: center;
-  width: 100%;
 }
 
 /* Product name */
@@ -115,6 +133,23 @@ nav a:hover {
   color: #aaa;
   font-size: 14px;
   margin-right: 5px;
+}
+
+.buy-btn {
+  margin-top: 20px; /* Space between the color dots and the button */
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.buy-btn:hover {
+  background-color: #c0392b;
 }
 
 .footer {
