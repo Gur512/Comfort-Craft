@@ -83,10 +83,105 @@ nav a:hover {
   align-items: center;
   transition: background-color 0.3s ease;
 }
+
 .header-btn:hover {
   background-color: #5f4031;
   transform: scale(1.1);
 }
+
+.header-btn:focus,:active {
+  outline: none;
+}
+
+/* Modal Overlay */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  margin: 0 auto;
+}
+
+/* Modal Box */
+.modal-content {
+  background-color: #f5f5dc; /* Beige */
+  margin: 8% auto;
+  padding: 20px;
+  width: 25%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Close Button */
+.close {
+  color: #333;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  position:absolute;
+  right: 3px;
+  top: 0;
+}
+
+.close:hover {
+  color: #000;
+}
+.img-section {
+  width: 100%;
+  height: 150px;
+  /* margin: 0 auto; */
+  background-image: url(../img/cropped-sofa.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  object-fit: cover;
+  /* border: 1px solid #5f4031; */
+}
+
+.modal-content h2 {
+  margin-top: 30px;
+  color: #4B2F20;
+  font-size: 25px;
+}
+/* Input Fields */
+input {
+  display: block;
+  width: 90%;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #5f4031;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+
+
+/* Login Button */
+button {
+  background-color: #ffb347; /* Matching button color */
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #e89e37; /* Slightly darker on hover */
+}
+
+/* button:active {
+  border-color: none;
+} */
 
 
 .info {
@@ -129,14 +224,23 @@ p {
   font-weight: 600;
   border-radius: 15px;
   padding: 5px 25px;
-  background-color: #dba773;
+  background-color: #dd9955;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .btn:hover {
-  background-color: #dd9955;
+  background-color: #dba773;
   transform: scale(1.1);
 }
+
+.btn:focus,:active {
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(221, 153, 85, 0.6);
+}
+
+/* .btn:active {
+  border-color: none;
+} */
 
 .products{
   background-color: var(--app-light-background);
