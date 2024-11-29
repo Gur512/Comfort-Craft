@@ -38,9 +38,7 @@ header {
   justify-content: space-between; 
   align-items: center;
   padding: 20px 0;
-  position: sticky;
   top: 0;
-  z-index: 4;
   gap: 20px;
   width: auto;
 }
@@ -97,16 +95,13 @@ nav a:hover {
 .info {
   height: 100vh;
   background-image: url(../img/background-ai-image.webp);
-  position: absolute;
   top: 0;
   left: 0;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  justify-content: center;
+  position: relative;
 
   p {
     font-size: 2rem;
@@ -114,6 +109,15 @@ nav a:hover {
     width: 60rem;
     margin-top: 20px;
   }
+}
+
+.hero-banner-content{
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
 }
 
 .main-title {
@@ -150,7 +154,6 @@ nav a:hover {
   padding-top: 50px;
   padding-bottom: 50px;
   margin-bottom: 50px;
-  margin-top: 100vh ;
 }
 
 .our-product {
@@ -207,6 +210,7 @@ nav a:hover {
   align-items: center;
   justify-content: center;
 }
+
 
 .product-info h3 {
   font-size: 18px;
