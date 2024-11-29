@@ -38,6 +38,7 @@ header {
   z-index: 4;
   gap: 20px;
   width: auto;
+  /* background-color: #333; */
 }
 
 .logo h1 {
@@ -73,7 +74,8 @@ nav a:hover {
 }
 
 .header-btn {
-  padding: 3px 20px;
+  padding: 5px 20px;
+  margin-right: 10px;
   font-size: 1.8rem;
   background-color: #4B2F20;
   color: #fff;
@@ -109,12 +111,34 @@ nav a:hover {
 /* Modal Box */
 .modal-content {
   background-color: #f5f5dc; /* Beige */
-  margin: 8% auto;
+  margin: 7% auto;
   padding: 20px;
   width: 25%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
+}
+
+.message1,.message2 {
+  color: #f33;
+  font-size: 15px;
+  width: auto;
+  display: block;  
+  /* text-align: left; */
+  margin: 0;
+  padding: 0;
+  height: 20px;
+  /* background-color: #dd9955; */
+}
+
+/* form:focus, :active {
+  outline: none;
+} */
+
+header,.form:focus, :active {
+  /* outline: none !important; */
+  box-shadow: none !important;
+  /* border: none !important; */
 }
 
 /* Close Button */
@@ -145,7 +169,7 @@ nav a:hover {
 }
 
 .modal-content h2 {
-  margin-top: 30px;
+  margin: 20px auto;
   color: #4B2F20;
   font-size: 25px;
 }
@@ -153,7 +177,7 @@ nav a:hover {
 input {
   display: block;
   width: 90%;
-  margin: 20px auto;
+  margin: 5px auto;
   padding: 10px;
   border: 1px solid #5f4031;
   border-radius: 5px;
@@ -171,6 +195,7 @@ button {
   border-radius: 20px;
   cursor: pointer;
   font-size: 15px;
+  margin-top: 10px;
   font-weight: 600;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
@@ -240,6 +265,10 @@ p {
 
 /* .btn:active {
   border-color: none;
+} */
+/* .email-error, .password-error {
+  color: #f00;
+  display: none;
 } */
 
 .products{

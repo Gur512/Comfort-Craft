@@ -40,9 +40,13 @@
                 <h1></h1>
               </div>
               <h2>Login to Your Account</h2>
-              <form>
-                <input class="input-1" type="email" placeholder="Email" required />
-                <input class="input-2" type="password" placeholder="Password" required />
+              <form class="form" autocomplete="off">
+                <input class="input-1" type="email" placeholder="Email" autocomplete="off" />
+                <p class="message1"></p>
+                <!-- <span class="email-error">Please use correct format</span> -->
+                <input class="input-2" type="password" maxlength="6" placeholder="Enter only digits" autocomplete="new-password" />
+                <div class="message2"></div>
+                <!-- <span class="password-error">Please enter only digits</span> -->
                 <!-- <label for="rememberMe">
                   <input type="checkbox" id="rememberMe" name="rememberMe">
                   Remember Me
