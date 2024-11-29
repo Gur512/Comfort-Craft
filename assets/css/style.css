@@ -318,4 +318,78 @@ p {
   }
 }
 
+/* Related Products */
+#related-products {
+  padding: 20px;
+  background-color: #f9f9f9;
 
+  h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+  .col {
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .col:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  .col img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  .item-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #000000;
+    margin-bottom: 5px;
+  }
+  
+  /* Description Styling */
+  .Sofa-2-description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  #related-products .col {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  #related-products .col {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
