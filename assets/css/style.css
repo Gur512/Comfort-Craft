@@ -255,12 +255,27 @@ p {
 }
 /*  Overview section  */
 #overview {
-  padding: 20px;
+  padding: 50px;
 
   .features {
     list-style: disc;
     margin-left: 20px;
-    font-size: 25px;
+    font-size: 20px;
   }
   
+}
+
+/* Specifications Table */
+#specifications {
+  padding: 50px;
+}
+#specifications table {
+  width: 100%;
+  border-collapse: collapse;
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 20px;
+  }
 }
