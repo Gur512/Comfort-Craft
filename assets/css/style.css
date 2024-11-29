@@ -284,3 +284,19 @@ p {
     font-size: 20px;
   }
 }
+
+/* Customer Reviews */
+#reviews {
+  padding: 20px;
+  margin-left: 50px;
+  font-size: 20px;
+
+  h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
+#reviews .ratings button {
+  margin-right: 10px;
+  padding: 10px;
+}
