@@ -3,20 +3,15 @@
 :root {
   --app-dark-background: #000000;
   --app-white-background: #fff;
-  --app-green-background: #33ab4e;
-  --app-blue-background:#1489ff;
-  --app-yellow-background:#e9c914;
-  --app-orange-background: #ff833c; 
-  --app-darkblue-background: #007fff; 
-  --app-lightgray-background: #fafafa; 
-  --app-softsilver-background:#eaeaea;
-  --app-box-radius: 6px;
+  --app-light-background: #f9f9f9;
+  --app-gary-text-color: #333;
+  --app-orange-color: #e74c3c;
 }
 
 /* Basic rules */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--app-white-background-color);
+  background-color: var(--app-white-background);
   margin: 0;
   padding: 0;
 }
@@ -61,11 +56,17 @@ nav a:hover {
   height: 100vh;
 }
 
-/* Product Grid */
+.products{
+  background-color: var(--app-light-background);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
 .our-product {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Two items per row */
-  gap: 20px; /* Space between items */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   margin: 20px auto;
   max-width: 1200px;
   padding: 10px;
@@ -79,24 +80,27 @@ nav a:hover {
   cursor: pointer;
   border-radius: 50px;
   text-transform: uppercase;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
 }
 
 .title{
-  font-size: 2rem;
+  font-size: 3rem;
   margin-top: 10px;
   text-align: center;
+  padding: 10px;
 }
 
 .product-card {
   border-radius: 8px;
-  overflow: hidden; /* Prevents text or elements from overflowing */
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 }
 
-/* Product image styling */
 .product-card img {
   width: 100%;
   height: auto;
@@ -104,28 +108,27 @@ nav a:hover {
   border-radius: 15px;
 }
 
-/* Product information container */
 .product-info {
+  text-align: center; 
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the button and other text horizontally */
-  padding: 10px;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Product name */
 .product-info h3 {
   font-size: 18px;
   margin: 10px 0;
   font-weight: bold;
-  color: #333;
+  color: var(--app-gary-text-color);
 }
 
 /* Product price */
 .product-info .price {
   font-size: 16px;
   font-weight: bold;
-  color: #e74c3c;
+  color: var(--app-orange-color);
 }
 
 .product-info .old-price {
@@ -138,13 +141,16 @@ nav a:hover {
 .buy-btn {
   margin-top: 20px; /* Space between the color dots and the button */
   padding: 10px 20px;
-  background-color: #e74c3c;
-  color: white;
+  background-color: var(--app-orange-color);;
+  color: var(--app-white-background);;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
 }
 
 /* Button hover effect */
