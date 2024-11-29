@@ -74,3 +74,14 @@ nav a:hover {
   justify-content: space-between;
   align-items: center;
 }
+/*  Overview section  */
+#overview {
+  padding: 20px;
+
+  .features {
+    list-style: disc;
+    margin-left: 20px;
+    font-size: 30px;
+  }
+  
+}
