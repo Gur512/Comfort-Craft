@@ -1,11 +1,16 @@
 @charset "utf-8";
 
 :root {
-  --app-dark-background: #000000;
+  --app-dark-color: #000;
   --app-white-background: #fff;
   --app-light-background: #f9f9f9;
   --app-gary-text-color: #333;
   --app-orange-color: #e74c3c;
+  --app-light-gray-color: #eaeaea;
+  --app-choclate-color: #4B2F20;
+  --app-hover-choclate: #5f4031;
+  --app-hover-beige: #dd9955;
+  --app-beige-color: #dba773;
 }
 
 * {
@@ -45,15 +50,15 @@ header {
   padding: 0;
   font-size: 3rem;
   font-weight: 700;
-  color: #4B2F20;
+  color: var(--app-choclate-color);
 }
 .logo:hover {
-  color: #4B2F20;
+  color: var(--app-choclate-color);
   text-decoration: none;
 }
 
 .title {
-  color: #4B2F20;
+  color: var(--app-choclate-color);
 }
 
 nav {
@@ -63,19 +68,19 @@ nav {
 
 nav a {
   font-size: 1.8rem;
-  color: #000;
+  color: var(--app-dark-color);
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #000;
+  color: var(--app-dark-color);
   text-decoration: none;
 }
 
 .header-btn {
   padding: 3px 20px;
   font-size: 1.8rem;
-  background-color: #4B2F20;
+  background-color: var(--app-choclate-color);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -84,11 +89,11 @@ nav a:hover {
   transition: background-color 0.3s ease;
 }
 .header-btn:hover {
-  background-color: #5f4031;
+  background-color: var(--app-hover-choclate);
   transform: scale(1.1);
 }
 
-
+/*hero banner section*/
 .info {
   height: 100vh;
   background-image: url(../img/background-ai-image.webp);
@@ -102,6 +107,13 @@ nav a:hover {
   flex-direction: column;
   text-align: center;
   justify-content: center;
+
+  p {
+    font-size: 2rem;
+    margin: 0 auto;
+    width: 60rem;
+    margin-top: 20px;
+  }
 }
 
 .main-title {
@@ -113,12 +125,6 @@ nav a:hover {
   margin-top: 25px;
 }
 
-p {
-  font-size: 2rem;
-  margin: 0 auto;
-  width: 60rem;
-  margin-top: 20px;
-}
 
 .btn {
   width: auto;
@@ -129,25 +135,27 @@ p {
   font-weight: 600;
   border-radius: 15px;
   padding: 5px 25px;
-  background-color: #dba773;
+  background-color: var(--app-beige-color);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .btn:hover {
-  background-color: #dd9955;
+  background-color: var(--app-hover-beige);
   transform: scale(1.1);
 }
 
+/* Prouduct section*/
 .products{
-  background-color: var(--app-light-background);
+  background-color: var(--app-light-gray-color);
   padding-top: 50px;
   padding-bottom: 50px;
   margin-bottom: 50px;
+  margin-top: 100vh ;
 }
 
 .our-product {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   margin: 20px auto;
   max-width: 1200px;
@@ -167,11 +175,12 @@ p {
   text-align: center;
 }
 
-.title{
+.product-title{
   font-size: 3rem;
   margin-top: 10px;
   text-align: center;
   padding: 10px;
+  color: #4B2F20;
 }
 
 .product-card {
@@ -203,10 +212,9 @@ p {
   font-size: 18px;
   margin: 10px 0;
   font-weight: bold;
-  color: var(--app-gary-text-color);
+  color: var(--app-choclate-color);
 }
 
-/* Product price */
 .product-info .price {
   font-size: 16px;
   font-weight: bold;
@@ -221,7 +229,7 @@ p {
 }
 
 .buy-btn {
-  margin-top: 20px; /* Space between the color dots and the button */
+  margin-top: 20px;
   padding: 10px 20px;
   background-color: var(--app-orange-color);;
   color: var(--app-white-background);;
@@ -235,7 +243,6 @@ p {
   text-align: center;
 }
 
-/* Button hover effect */
 .buy-btn:hover {
   background-color: #c0392b;
 }
