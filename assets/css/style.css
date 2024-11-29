@@ -287,8 +287,7 @@ p {
 
 /* Customer Reviews */
 #reviews {
-  padding: 20px;
-  margin-left: 50px;
+  padding: 50px;
   font-size: 20px;
 
   h2 {
@@ -300,3 +299,23 @@ p {
   margin-right: 10px;
   padding: 10px;
 }
+/* Related Searches */
+#related-searches {
+  padding: 50px;
+  h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .search-tags {
+    display: flex;
+    gap: 10px;
+  }
+  li a {
+    text-decoration: none;
+    background-color: #eee;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+}
+
+
