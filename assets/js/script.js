@@ -1,7 +1,6 @@
 'use strict';
 
 import * as utils from "./utils.js";
-<<<<<<< HEAD
 import topics, { isEmailValid, isPasswordValid, clearInput } from "./fn.js";
 
 const modal = utils.select('.modal');
@@ -48,7 +47,3 @@ utils.listen('click', login, (event) => {
     modal.style.display = "none";
 });
 
-=======
-
-
->>>>>>> main
