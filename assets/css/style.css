@@ -1194,5 +1194,42 @@ nav ul li a.fa-linkedin-in {
       font-size: 20px;
       margin-bottom: 20px;
     }
+
+    .delivery-section {
+      border: 2px solid #c2c1c1;
+      border-radius: 5px;
+      padding: 5px 10px;
+      width: 300px;
+      height: 180px;
+    }
+
+    .delivery-header {
+      display: grid;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 400px;
+      margin-bottom: 5px;
+      color: #000;
+    }
+
+    .delivery-dates {
+      color: #000;
+
+      h3 {
+        font-size: 15px;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: bold;
+        color: green;
+      }
+    }
+
+    p2 {
+      color: #808080;
+      font-size: 12px;
+      margin-top: 50px;
+    }
   }
 }
