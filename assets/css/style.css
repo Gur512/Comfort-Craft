@@ -1231,5 +1231,66 @@ nav ul li a.fa-linkedin-in {
       font-size: 12px;
       margin-top: 50px;
     }
+
+    .selection {
+      display: flex;
+
+      .quantity {
+        display: flex;
+        margin-top: 10px;
+        margin-right: 10px;
+
+        h3 {
+          color: #000;
+          font-size: 18px;
+          margin-top: 10px;
+          margin-right: 4px;
+        }
+
+        input {
+          border: 1.8px solid #484747;
+          border-radius: 5px;
+          font-weight: bold;
+          font-size: 20px;
+          width: 55px;
+          text-align: center;
+        }
+      }
+
+      #cart-btn {
+        padding: 10px 150px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        margin-top: 10px;
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        background-color: #ff4500;
+      }
+
+      #cart-btn:hover {
+        background-color: #e94104;
+      }
+    }
+
+    .checkout {
+      #buy-btn {
+        padding: 10px 211px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #ff4500;
+        margin-top: 15px;
+        cursor: pointer;
+        border: 2px solid #ff4500;
+        border-radius: 5px;
+        background-color: #fff;
+      }
+
+      #buy-btn:hover {
+        background-color: #ff4500;
+        color: #fff;
+      }
+    }
   }
 }
