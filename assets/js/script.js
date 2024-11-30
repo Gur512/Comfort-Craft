@@ -44,7 +44,7 @@ utils.listen('click', login, (event) => {
     }
 
     clearInput(emailInput, password, message1, message2);
-    modal.style.display = "none";
+    modal.style.display = "none";
 });
 
 import { 

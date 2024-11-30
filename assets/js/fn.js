@@ -14,7 +14,7 @@ export function clearInput(emailInput, password, message1, message2) {
     emailInput.value = "";
     password.value = "";
     message1.textContent = ""; 
-    message2.textContent = ""; 
+    message2.textContent = "";
 }
 
 export function clearErrors() {
