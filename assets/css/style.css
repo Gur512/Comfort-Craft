@@ -14,7 +14,6 @@
   box-sizing: border-box;
 }
 
-/* Basic rules */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--app-white-background);
@@ -130,7 +129,7 @@ nav a:hover {
 
 
 header,.form:focus, :active {
-  box-shadow: none !important;
+  box-shadow: none !important; /* have to use this because of reset applied */
 }
 
 .close {
@@ -224,7 +223,7 @@ button:hover {
 
 .info {
   height: 100vh;
-  background-image: url(../img/background-ai-image.webp);
+  background-image: url(../img/background-image.webp);
   position: absolute;
   top: 0;
   left: 0;
