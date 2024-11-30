@@ -637,3 +637,50 @@ footer a {
     width: 80%;
   }
 }
+
+@media (max-width: 768px) {
+  nav, .header-btn {
+    display: none;
+  }
+
+  .header .fa-bars {
+    display: block;
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .fa-bars {
+    display: none;
+  }
+}
+
+@media (max-width: 1050px) {
+  .our-product {
+    grid-template-columns: repeat(2, 1fr); /* Adjusts to a two-column layout */
+    display: grid;
+  }
+  .product-title h2 {
+  }
+  .card-item {
+    width: 90%;
+  }
+}
+
+/* For screens smaller than 600px: 1 card in a row */
+@media (max-width: 600px) {
+  .our-product {
+    grid-template-columns: 1fr; /* Adjusts to a single-column layout */
+    justify-items: stretch;
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 1003px) {
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px; 
+  }
+}
