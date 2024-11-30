@@ -308,36 +308,83 @@ nav ul li a.fa-linkedin-in {
   text-decoration: none; 
 }
 
+@media screen and (max-width: 768px) {
+  .contact-box {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .contact-left, .contact-right {
+    max-width: 100%;
+  }
 
-@media (max-width: 768px) {
+  .Service-hour h4 {
+    font-size: 22px;
+  }
+
+  .Service-hour h5 {
+    font-size: 16px;
+  }
 
   .social-media h2 {
-    font-size: 1.5rem;
+    font-size: 20px;
   }
 
-  .social-media a {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-
-
-
-
-  .social-media li {
-    margin: 5px;
-  }
-
-  .social-media a {
-    font-size: 1.25rem;
+  .social-media nav ul li a {
+    font-size: 25px;
   }
 }
 
 
-@media (min-width: 1024px) {
+@media screen and (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .contact-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-left, .contact-right {
+    max-width: 100%;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+
+  input, textarea {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .Service-hour h4 {
+    font-size: 20px;
+  }
+
+  .Service-hour h5 {
+    font-size: 14px;
+  }
+
+  .social-media h2 {
+    font-size: 18px;
+  }
+
+  .social-media nav ul li a {
+    font-size: 22px;
+  }
 }
+
 
 
 
