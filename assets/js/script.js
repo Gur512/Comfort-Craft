@@ -44,62 +44,30 @@ utils.listen('click', login, (event) => {
     }
 
     clearInput(emailInput, password, message1, message2);
-    modal.style.display = "none";
+    modal.style.display = "none";
 });
 
-import "Working with modules";
-import { isEmailValid, isPasswordValid, clearInput } from "./path-to-your-module.js";
+import { 
+    clearErrors, validateNotEmpty, validateEmail, validatePhone } from './fn.js';
 
-document.addEventListener("DOMContentLoaded", () => {
-  const form = document.getElementById("user-form");
-  const emailInput = document.getElementById("email");
-  const passwordInput = document.getElementById("password");
-  const emailError = document.getElementById("email-error");
-  const passwordError = document.getElementById("password-error");
+const form = select('form[action="/submit_registration"]');
+const firstName = select('#first-name');
+const lastName = select('#last-name');
+const email = select('#email');
+const phone = select('#phone');
 
-  form.addEventListener("submit", (event) => {
-    event.preventDefault(); 
-
-    const email = emailInput.value.trim();
-    const password = passwordInput.value.trim();
+// Handle form submission
+listen('submit', form, event => {
+    clearErrors();
 
     let isValid = true;
 
-    if (!isEmailValid(email)) {
-      emailError.textContent = "Please enter a valid email.";
-      isValid = false;
-    } else {
-      emailError.textContent = "";
-    }
+    isValid &= validateNotEmpty(firstName, 'First name is required.');
+    isValid &= validateNotEmpty(lastName, 'Last name is required.');
+    isValid &= validateEmail(email);
+    isValid &= validatePhone(phone);
 
-    if (!isPasswordValid(password)) {
-      passwordError.textContent = "Password must be 1-6 digits.";
-      isValid = false;
-    } else {
-      passwordError.textContent = "";
+    if (!isValid) {
+        event.preventDefault();
     }
-
-    if (isValid) {
-      console.log("Form submitted successfully!");
-      // Optionally send data to a server
-      clearInput(emailInput, passwordInput, emailError, passwordError);
-    }
-  });
-
-  emailInput.addEventListener("input", () => {
-    if (!isEmailValid(emailInput.value.trim())) {
-      emailError.textContent = "Invalid email format.";
-    } else {
-      emailError.textContent = "";
-    }
-  });
-
-  passwordInput.addEventListener("input", () => {
-    if (!isPasswordValid(passwordInput.value.trim())) {
-      passwordError.textContent = "Password must be 1-6 digits.";
-    } else {
-      passwordError.textContent = "";
-    }
-  });
 });
-
