@@ -47,3 +47,59 @@ utils.listen('click', login, (event) => {
     modal.style.display = "none";
 });
 
+import "Working with modules";
+import { isEmailValid, isPasswordValid, clearInput } from "./path-to-your-module.js";
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("user-form");
+  const emailInput = document.getElementById("email");
+  const passwordInput = document.getElementById("password");
+  const emailError = document.getElementById("email-error");
+  const passwordError = document.getElementById("password-error");
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault(); 
+
+    const email = emailInput.value.trim();
+    const password = passwordInput.value.trim();
+
+    let isValid = true;
+
+    if (!isEmailValid(email)) {
+      emailError.textContent = "Please enter a valid email.";
+      isValid = false;
+    } else {
+      emailError.textContent = "";
+    }
+
+    if (!isPasswordValid(password)) {
+      passwordError.textContent = "Password must be 1-6 digits.";
+      isValid = false;
+    } else {
+      passwordError.textContent = "";
+    }
+
+    if (isValid) {
+      console.log("Form submitted successfully!");
+      // Optionally send data to a server
+      clearInput(emailInput, passwordInput, emailError, passwordError);
+    }
+  });
+
+  emailInput.addEventListener("input", () => {
+    if (!isEmailValid(emailInput.value.trim())) {
+      emailError.textContent = "Invalid email format.";
+    } else {
+      emailError.textContent = "";
+    }
+  });
+
+  passwordInput.addEventListener("input", () => {
+    if (!isPasswordValid(passwordInput.value.trim())) {
+      passwordError.textContent = "Password must be 1-6 digits.";
+    } else {
+      passwordError.textContent = "";
+    }
+  });
+});
+
