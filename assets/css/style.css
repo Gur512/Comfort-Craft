@@ -21,7 +21,6 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: var(--app-white-background);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -424,6 +423,7 @@ button:hover {
     margin-bottom: 10px;
   }
 }
+
 #specifications table {
   width: 100%;
   border-collapse: collapse;
@@ -445,6 +445,7 @@ button:hover {
     margin-bottom: 10px;
   }
 }
+
 #reviews .ratings button {
   margin-right: 10px;
   padding: 10px;
@@ -545,6 +546,146 @@ button:hover {
   }
 }
 
+/*contact section*/
+.contact-map{
+  background-color: #e1d1c1;
+}
+
+.registration-container {
+  background-color:#e8e8e8 ;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.01);
+  width:700px;
+  margin-inline: auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input, select, textarea {
+    background-color:#f9f9f9;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+}
+
+.submit {
+  width: 75%;
+  padding: 10px;
+  background-color: var(--app-beige-color);
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+   margin-left: 60px;
+   margin-top: 15px;
+}
+
+.submit:hover {
+  background-color: var(--app-hover-beige);
+}
+
+textarea {
+  resize: none;
+}
+
+.contact-info {
+  font-size: 18px;
+  color:var(--app-dark-background);
+  text-align: left; 
+  max-width: 700px;
+  margin-inline: auto; 
+  padding-left: 35px; 
+
+  p {
+    margin: 10px 0;
+  }
+
+  a {
+    margin-left: 10px;
+    text-decoration: none;
+  }
+
+  a:hover {
+      text-decoration: underline;
+  }
+}
+
+.contact-us-section {
+  background-color: #e8e8e8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.01);
+  text-align: center;
+  width: 700px;
+  height: 650px;
+
+  h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  p {
+    font-size: 22px;
+    color: var(--app-dark-background);
+    margin-bottom: 30px;
+  }
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px;
+  gap: 15px;
+}
+
+.name-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.name-field {
+  flex: 1;
+}
+
+.name-field label,
+.name-field input {
+  width: 100%;
+}
+
+.send-message-title {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+/* Style for the map container */
+.map-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.map-container iframe {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  border-radius: var(--app-box-radius);
+  margin-top: 60px;
+}
 
 footer {
   padding: 8rem 0;
@@ -598,11 +739,12 @@ footer a {
 }
 
 .join-btn:hover {
-  background-color: #fff;
+  background-color: var(--app-hover-beige);
   border: 0.1rem solid #000;
   border-radius: 0.5rem;
-  color: #000;
   transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: white;
 }
 
 .authors {
