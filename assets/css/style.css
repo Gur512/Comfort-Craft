@@ -30,32 +30,25 @@ body {
 
 /* Contact Part */
 
-
-.contact {
+.contact-section {
   background-color: #dce2e6;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   width: 100%;
   box-shadow: 0px 5px 15px 0px rgba(20, 20, 20, 0.2);
-
-
-
 }
-
-
-
-.contact h2 {
+ 
+.contact-section h2 {
+  padding: 20px 20px 20px 20px;
   padding-top: 15px;
   text-align: center;
   font-size: 45px;
   font-style: italic;
   font-weight: 400; 
-
 }
 
-.contact p {
-  
+.contact-section p {
   padding-bottom: 30px;
   text-align: center;
   padding-left: 0px;
@@ -66,14 +59,13 @@ body {
   margin-bottom: 40px;
   border: 1px solid rgb(22, 21, 21);
   border-radius: 7px;
-
 }
-.contact-box {
+
+.contact-form-container {
   display: flex;
-
 }
 
-.contact-left {
+.form-left {
   background-color: #f5f5dc;
   flex-basis: 60%;
   padding: 40px 60px;
@@ -82,29 +74,21 @@ body {
   border-radius: 7px;
   height: 480px;
   box-shadow: 0px 5px 15px 0px rgba(20, 20, 20, 0.1);
-
-
 }
 
-.contact-left:hover {
+.form-left:hover {
   transform: scale(1.1); 
 }
 
-
-
-.contact-left h3 {
+.form-left h3 {
   font-size: 25px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: 400;
   font-style: italic;
-
-
 }
 
-
-
-.contact-right {
+.form-right {
   background-color: #f5f5dc;
   flex-basis: 40%;
   padding: 40px;
@@ -112,35 +96,28 @@ body {
   border-radius: 7px;
   height: 480px;
   box-shadow: 0px 5px 15px 0px rgba(20, 20, 20, 0.1);
-
-
 }
 
-.contact-right:hover {
+.form-right:hover {
   transform: scale(1.1); 
-
 }
 
-.contact-right h3 {
+.form-right h3 {
   font-size: 25px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: 400;
   font-style: italic;
-  
-
 }
 
-.input-row {
+.input-group-row {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
 
-.input-row .input-group {
+.input-group-row .input-group {
   flex-basis: 45%;
-
-
 }
 
 input {
@@ -152,9 +129,7 @@ input {
   height: 30px;
   font-size: 13px;
   padding: 5px 15px 5px 10px;
-
 }
-
 
 textarea {
   width: 100%;
@@ -171,7 +146,6 @@ label {
   display: block;
   color: #161516;
   font-size: 15px;
-
 }
 
 button {
@@ -185,52 +159,33 @@ button {
   font-size: 12px;
   box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
   border-radius: 10px;
-  
 }
 
 button:hover {
   transform: scale(1.1); 
   background-color: #71c471;
-
 }
 
-.success-message {
-  color: green;
-  font-size: 16px;
-  margin-top: 10px;
-}
-.error-message {
-  color: red;
-  font-size: 16px;
-  margin-top: 10px;
-}
+
 
 tr td:first-child {
   padding-right: 20px;
-
-
 }
+
 tr td {
   padding-top: 30px;
   font-size: 25px;
-  
-
-
 }
 
-.Service-hour {
+.office-hours {
   background-color: #e5ecf3;
   height: 270px;
   width: auto;
   border-radius: 15px;
   box-shadow: 0px 5px 15px 0px rgba(20, 20, 20, 0.1);
-
-
-
-
 }
 
-.Service-hour h4 {
+.office-hours h4 {
   text-align: center;
   padding: 20px 20px 20px 20px;
   margin-top: 20px;
@@ -238,7 +193,7 @@ tr td {
   font-weight: 400;
 }
 
-.Service-hour h5 {
+.office-hours h5 {
   margin-top: 5px;
   text-align: center;
   padding: 10px 20px 7px 20px;
@@ -248,11 +203,9 @@ tr td {
   font-size: 17px;
 }
 
-.Service-hour h5 i {
+.office-hours h5 i {
   padding-right: 10px;
-
 }
-
 
 .social-media h2 {
   margin-top: 25px;
@@ -308,36 +261,37 @@ nav ul li a.fa-linkedin-in {
   text-decoration: none; 
 }
 
+
+
 @media screen and (max-width: 768px) {
-  .contact-box {
+  .contact-form-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .contact-left, .contact-right {
+  .form-left, .form-right {
     max-width: 100%;
   }
 
-  .Service-hour h4 {
+  .office-hours h4 {
     font-size: 22px;
   }
 
-  .Service-hour h5 {
+  .office-hours h5 {
     font-size: 16px;
   }
 
-  .social-media h2 {
+  .social-media-section h2 {
     font-size: 20px;
   }
 
-  .social-media nav ul li a {
+  .social-media-section nav ul li a {
     font-size: 25px;
   }
 }
 
-
 @media screen and (max-width: 480px) {
-  .container {
+  .content-wrapper {
     width: 95%;
     padding: 10px;
   }
@@ -346,12 +300,12 @@ nav ul li a.fa-linkedin-in {
     font-size: 26px;
   }
 
-  .contact-box {
+  .contact-form-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .contact-left, .contact-right {
+  .form-left, .form-right {
     max-width: 100%;
   }
 
@@ -368,25 +322,22 @@ nav ul li a.fa-linkedin-in {
     font-size: 14px;
   }
 
-  .Service-hour h4 {
+  .office-hours h4 {
     font-size: 20px;
   }
 
-  .Service-hour h5 {
+  .office-hours h5 {
     font-size: 14px;
   }
 
-  .social-media h2 {
+  .social-media-section h2 {
     font-size: 18px;
   }
 
-  .social-media nav ul li a {
+  .social-media-section nav ul li a {
     font-size: 22px;
   }
 }
-
-
-
 
 
 /* Footer Section */
